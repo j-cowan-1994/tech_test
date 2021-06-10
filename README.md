@@ -2,7 +2,7 @@
 
 •	Deploy an t2.micro EC2 instance using your preferred Linux OS using your preferred deployment method. If you are using any IaC tooling please include this config in your git repo. 
     Created t2.micro EC2 instance using Terraform.
-
+    
 •	Log into the terminal for the host and secure the node to the following minimum standards – Modify the default SSH port, disable root login, set up a standard user with full sudo privileges.
     Created a cloud-int script which will be ran on boot via Terraform. The script will:
     - Update SSH port to 2222
