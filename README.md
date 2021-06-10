@@ -4,11 +4,17 @@
     Created t2.micro EC2 instance using Terraform.
     
 •	Log into the terminal for the host and secure the node to the following minimum standards – Modify the default SSH port, disable root login, set up a standard user with full sudo privileges.
+
     Created a cloud-int script which will be ran on boot via Terraform. The script will:
+    
     - Update SSH port to 2222
+    
     - Ensure root login is disabled
+    
     - Create a new user which can authenticate with a SSH Key rather than password
+    
     - Extra security features which could be done are, remove the generic centos user and only allow SSH auth via SSH key 
+    
 •	Write a script in your preferred language that monitors diskspace usage on the main filesystem of the host, i.e “ / “ – the script should record the amount of free disk space a timestamp, and write it out to a log file named /var/log/freespace – ensure the log file does not get overwritten each time the script runs
     Created a basic script which will check the aviable disk space and pass it to a log. 
     Create a cron jon which will run the script every 5 mins
