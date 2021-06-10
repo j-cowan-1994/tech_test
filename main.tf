@@ -16,20 +16,6 @@ module "tech_test" {
 
 resource "aws_security_group" "security_group" {
   name        = "security_group"
-
-  ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["90.216.150.192/26"]
-  }
-  ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["90.216.134.192/26"]
-  }
-  
   ingress {
     from_port   = 2222
     to_port     = 2222
